@@ -1,1 +1,2 @@
-create database karkar
+CREATE DATABASE if NOT EXISTS karkar;
+USE karkar;
