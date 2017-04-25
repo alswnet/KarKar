@@ -1,11 +1,14 @@
 CREATE DATABASE if NOT EXISTS karkar;
 USE karkar;
 
+DROP TABLE IF EXISTS EMPRESA;
+DROP TABLE IF EXISTS USUARIO;
+
 CREATE TABLE `EMPRESA` (
   `id` smallint(7) unsigned NOT NULL auto_increment,
   `nombre` varchar(50) NOT NULL default '',
-  `correo` varchar(50) default '',
-  `telefono` char(9),
+  `correo` varchar(50) NOT NULL default '',
+  `telefono` char(9) NOT NULL,
   `direccion1` varchar(50) default '',
   `direccion2` varchar(50) default '',
   `website` varchar(50) default '',
