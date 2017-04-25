@@ -27,7 +27,8 @@ CREATE TABLE `USUARIO` (
   `direccion2` varchar(50) default '',
   `usuario` varchar(50) default NOT NULL,
   `password` varchar(50) default NOT NULl,
-  PRIMARY KEY  (`id`)
+  PRIMARY KEY  (`id`),
+  foreign key (id) REFERENCES EMPRESA (id) on delete cascade
 );
 
 INSERT INTO USUARIO VALUES ('1', 'admin', 'admin@karkar.com', '1111-1112', 'ss', 'ss2', 'admin', 'admin');
